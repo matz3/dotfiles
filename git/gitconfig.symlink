@@ -1,0 +1,57 @@
+# Local/private config goes in the include
+[include]
+	path = ~/.gitconfig.local
+[core]
+	autocrlf = input
+	editor = vim
+[pull]
+	rebase = true
+[push]
+	default = simple
+[alias]
+	co = checkout
+	cob = checkout -b
+	com = checkout master
+	delete-merged = !git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d
+	lg = log --oneline --decorate --graph
+	lga = log --oneline --decorate --graph --all
+	count = shortlog -sn
+	nb = "!f() { git checkout -b $1 origin/master; }; f"
+	ca = commit --amend
+	can = commit --amend --no-edit
+	cm = commit -m
+	ap = add -p
+	log-gerrit-changes = !git branch | grep -v \"\\*\" | xargs -n 1 -I {} sh -c \"echo {} && git log -n 1 --format=%B --decorate {} -- | awk 'NR==1 || /Change-Id/' && echo\"
+	cpx = cherry-pick -x
+[rerere]
+	enabled = true
+	autoupdate = true
+[pager]
+	diff = diff-so-fancy | less --tabs=4 -RFX
+	show = diff-so-fancy | less --tabs=4 -RFX
+[color "diff"]
+	meta = yellow bold
+	commit = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "branch"]
+	current = yellow reverse
+	local = white
+	remote = green
+[color "status"]
+	added = green
+	changed = yellow
+	untracked = red
+[color "decorate"]
+	head = cyan reverse
+	branch = green reverse
+	remoteBranch = red reverse
+	tag = blue reverse
+	commit = yellow

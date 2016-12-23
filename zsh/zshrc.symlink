@@ -1,0 +1,47 @@
+# shortcut to this dotfiles path is $ZSH
+export ZSH=$HOME/.dotfiles
+
+# Stash your environment variables in ~/.localrc.
+# This means they'll stay out of your main dotfiles repository,
+# but you'll have access to them in your scripts.
+if [[ -a ~/.localrc ]]
+then
+	source ~/.localrc
+fi
+
+# System
+source $ZSH/system/env.zsh
+source $ZSH/system/proxy.zsh
+
+# ZSH
+source $ZSH/zsh/aliases.zsh
+source $ZSH/zsh/config.zsh
+
+# OS X
+source $ZSH/macos/aliases.zsh
+
+# Homebrew
+source $ZSH/homebrew/env.zsh
+
+# thefuck
+source $ZSH/thefuck/aliases.zsh
+
+# nvm
+source $ZSH/nvm/init.zsh
+
+# Ruby
+source $ZSH/ruby/env.zsh
+source $ZSH/ruby/init.zsh
+
+# Python
+source $ZSH/python/init.zsh
+
+# Xcode
+source $ZSH/xcode/aliases.zsh
+
+# Prompt
+source $ZSH/zsh/prompt.zsh
+
+# Autocomplete
+source $ZSH/zsh/completion.zsh
+source $ZSH/git/completion.zsh

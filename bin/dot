@@ -1,0 +1,14 @@
+#!/bin/sh
+#
+# dot
+#
+# `dot` handles installation, updates, things like that. Run it periodically
+# to make sure you're on the latest and greatest.
+export ZSH=$HOME/.dotfiles
+
+# Install homebrew
+$ZSH/homebrew/install.sh 2>&1
+source $ZSH/homebrew/env.zsh
+
+# Update homebrew
+$ZSH/homebrew/update.sh

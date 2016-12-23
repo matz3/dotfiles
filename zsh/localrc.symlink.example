@@ -1,0 +1,12 @@
+# Configure proxy settings (see dotfiles/system/proxy.zsh)
+#export DOT_http_proxy="http://proxy.company.corp"
+#export DOT_no_proxy="localhost,127.0.0.1,*.company.corp"
+
+# Configure screenshot folder (see dotfiles/macos/settings.sh)
+#export DOT_screenshot_dir="$HOME/Desktop"
+
+# Configure private npm registry
+#export npm_config_registry="http://npm.example.com"
+
+# Configure Git Trainer Mode (see dotfiles/functions/prompt_pure_setup)
+#export PURE_GIT_PULL=0
