@@ -23,6 +23,8 @@
 	ap = add -p
 	log-gerrit-changes = !git branch | grep -v \"\\*\" | xargs -n 1 -I {} sh -c \"echo {} && git log -n 1 --format=%B --decorate {} -- | awk 'NR==1 || /Change-Id/' && echo\"
 	cpx = cherry-pick -x
+	st = status -sb
+	ds = diff --staged
 [rerere]
 	enabled = true
 	autoupdate = true
