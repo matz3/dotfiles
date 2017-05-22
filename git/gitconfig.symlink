@@ -25,6 +25,8 @@
 	cpx = cherry-pick -x
 	st = status -sb
 	ds = diff --staged
+	# Credits: https://stackoverflow.com/a/5188364
+	recent = !git for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))' | head
 [rerere]
 	enabled = true
 	autoupdate = true
