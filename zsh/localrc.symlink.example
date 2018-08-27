@@ -10,3 +10,6 @@
 
 # Configure Git Trainer Mode (see dotfiles/functions/prompt_pure_setup)
 #export PURE_GIT_PULL=0
+
+# Where Homebrew should be installed to
+export BREW_HOME="$HOME"
