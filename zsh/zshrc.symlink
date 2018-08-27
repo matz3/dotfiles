@@ -33,9 +33,6 @@ source $ZSH/ruby/init.zsh
 # Python
 source $ZSH/python/init.zsh
 
-# Xcode
-source $ZSH/xcode/aliases.zsh
-
 # Prompt
 source $ZSH/zsh/prompt.zsh
 
