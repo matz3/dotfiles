@@ -23,9 +23,6 @@ source $ZSH/macos/aliases.zsh
 # Homebrew
 source $ZSH/homebrew/env.zsh
 
-# thefuck
-source $ZSH/thefuck/aliases.zsh
-
 # nvm
 source $ZSH/nvm/init.zsh
 
