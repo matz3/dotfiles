@@ -26,9 +26,6 @@ source $ZSH/homebrew/env.zsh
 # nvm
 source $ZSH/nvm/init.zsh
 
-# Python
-source $ZSH/python/init.zsh
-
 # Prompt
 source $ZSH/zsh/prompt.zsh
 
