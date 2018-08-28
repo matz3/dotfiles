@@ -1,3 +1,4 @@
 brew 'diff-so-fancy'
 brew 'maven'
+brew 'yarn', args: ['--without-node']
 brew 'zsh-autosuggestions'
