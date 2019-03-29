@@ -11,7 +11,6 @@ fi
 
 # System
 source $ZSH/system/env.zsh
-source $ZSH/system/proxy.zsh
 
 # ZSH
 source $ZSH/zsh/aliases.zsh
