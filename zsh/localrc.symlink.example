@@ -13,3 +13,6 @@
 
 # Where Homebrew should be installed to
 export BREW_HOME="$HOME"
+
+# Where nvm is installed to
+export NVM_HOME="$HOME"
