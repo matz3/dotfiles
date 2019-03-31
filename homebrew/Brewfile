@@ -3,3 +3,4 @@ brew 'hub'
 brew 'maven'
 brew 'yarn', args: ['ignore-dependencies']
 brew 'zsh-autosuggestions'
+cask 'java'
