@@ -513,7 +513,7 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 # Enable “focus follows mouse” for Terminal.app
 # i.e. hover over a window and start typing in it without clicking first
-defaults write com.apple.terminal FocusFollowsMouse -bool true
+#defaults write com.apple.terminal FocusFollowsMouse -bool true
 
 ###############################################################################
 # Time Machine                                                                #
