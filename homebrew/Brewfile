@@ -1,4 +1,5 @@
-cask 'adoptopenjdk'
+tap 'AdoptOpenJDK/openjdk'
+cask 'adoptopenjdk8'
 brew 'diff-so-fancy'
 brew 'hub'
 brew 'maven'
