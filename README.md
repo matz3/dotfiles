@@ -5,7 +5,7 @@ Your dotfiles are how you personalize your system. These are mine.
 ## Topics
 
 Everything's built around topic areas. If you're adding a new area to your
-forked dotfiles — say, "Java" — you can simply add a `java` directory and put
+forked dotfiles — say, "Go" — you can simply add a `go` directory and put
 files in there. Anything with an extension of `.zsh` is meant to be included from your [`.zshrc`](./zsh/zshrc.symlink). Anything with an extension of `.sh` is meant to be called from other scripts (e.g. within the [`bin`](./bin/) folder) or just executed manually.
 Anything with an extension of `.symlink` will get
 symlinked without extension into `$HOME` when you run [`bootstrap.sh`](./bootstrap.sh).
