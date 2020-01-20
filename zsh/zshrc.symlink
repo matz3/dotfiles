@@ -34,3 +34,6 @@ source $ZSH/zsh/prompt.zsh
 # Autocomplete
 source $ZSH/zsh/completion.zsh
 source $ZSH/git/completion.zsh
+
+# z - jump around
+source $ZSH/z/z.zsh
