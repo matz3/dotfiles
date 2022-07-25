@@ -3,11 +3,12 @@
 	path = ~/.gitconfig.local
 [core]
 	autocrlf = input
-	editor = code --wait --new-window
+	editor = code --wait
 [pull]
 	rebase = true
 [push]
 	default = simple
+	autoSetupRemote = true
 [alias]
 	co = checkout
 	cob = checkout -b
@@ -70,3 +71,14 @@
 	driver = npx npm-merge-driver merge %A %O %B %P
 [rebase]
 	autoStash = true
+[checkout]
+	defaultRemote = origin
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[advice]
+	detachedHead = false
+[init]
+	defaultBranch = main

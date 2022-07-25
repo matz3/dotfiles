@@ -1,10 +1,18 @@
 tap 'AdoptOpenJDK/openjdk'
 cask 'adoptopenjdk8'
+brew 'cmake'
 brew 'diff-so-fancy'
+brew 'github/gh/gh'
 brew 'hub'
 brew 'jenv'
+brew 'jq'
 brew 'maven'
 brew 'yarn', args: ['ignore-dependencies']
 brew 'zsh-autosuggestions'
 
+cask 'anybar'
+cask 'graphiql'
 cask 'sapmachine-jdk'
+
+tap 'devhubapp/devhub'
+cask 'devhub'
