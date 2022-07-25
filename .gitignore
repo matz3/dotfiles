@@ -1,3 +1,4 @@
 git/gitconfig.local.symlink
 zsh/localrc.symlink
+homebrew/Brewfile.lock.json
 .bin
