@@ -1,5 +1,5 @@
 brew 'diff-so-fancy'
-brew 'github/gh/gh'
+brew 'gh'
 brew 'jenv'
 brew 'jq'
 brew 'maven'
